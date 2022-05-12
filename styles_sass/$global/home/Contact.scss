@@ -1,0 +1,12 @@
+.Contact {
+  h2 {opacity: 0;}
+  .InfoBox {opacity: 0;}
+  &.animate {
+    h2 {animation: fromLeft .5s forwards;
+      @media (max-width: $phone) {animation: fromLeft .5s forwards;}}
+    .InfoBox:nth-child(1) {animation: fromLeft 1s forwards;
+      @media (max-width: $phone) {animation: fromLeft 1s forwards;}}
+    .InfoBox:nth-child(2) {animation: fromRight 1s forwards;
+      @media (max-width: $phone) {animation: fromLeft 1.5s forwards;}}
+  }
+}

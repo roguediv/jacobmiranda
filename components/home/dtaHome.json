@@ -1,0 +1,28 @@
+{
+  "header": {
+    "title": "Dream so Big You Reach Orbit",
+    "desc": "Welcome! On this page, you will learn about the kind of person I am. That includes my skills and my accomplishments.",
+    "btnCTA": "Let's Get Started"
+  },
+  "infoItems": [
+    {
+      "item": "10+",
+      "value": "Years of Experience"
+    },
+    {
+      "item": "192",
+      "value": "Completed Projects"
+    },
+    {
+      "item": "15",
+      "value": "Blogs Posted"
+    },
+    {
+      "item": "∞",
+      "value": "Dreams Created"
+    }
+  ],
+  "about": {
+    "title": ""
+  }
+}

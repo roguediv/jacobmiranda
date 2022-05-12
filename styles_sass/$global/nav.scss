@@ -1,0 +1,209 @@
+.nav {
+  background-color: #191923;
+  display: grid;
+  position: relative;
+  height: 100%;width: 100%;
+  .ul-hldr {
+    width: 100%;
+    display: grid;
+    gap: var(--padding-y);
+    @media (min-width: $phone) {
+      padding-top: var(--padding-y);
+      margin-bottom: auto;
+    }
+    @media (max-width: $phone) {
+      display: block;
+      height: 100%;
+      grid-template-rows: 100%;
+      gap: 0;
+    }
+  }
+}
+.nav-1 {
+  grid-area: 1 / 1 /span 1 / span 2;
+  grid-template-columns: minmax(150px,10vw) 600px 1fr min-content;
+  place-items: center;
+  gap: var(--padding-y);
+  @media (max-width: $phone) {display: none;}
+  .page-title {
+    margin-right: auto;
+    padding-left: var(--gap-2);
+  }
+  .search {
+    margin-left: auto;
+    input {
+      border-radius: 20px;
+      border: none;
+      outline: none;
+      width: clamp(300px, 25vw, 900px);
+      padding: 10px 20px;
+    }
+  }
+  .profile {
+    padding-right: var(--gap-2);
+  }
+}
+.nav-2 {
+  place-items:center;
+  color: white;
+  overflow: hidden;
+  @media (min-width: $phone) {
+    grid-area: 2 / 1 /span 1 / span 1;
+  }
+  @media (max-width: $phone) {
+    grid-template-rows: 1fr;
+    height: 100%;
+  }
+  ul {
+    display: grid;
+    gap: var(--gap);
+    padding: 0;
+    width: 100%;
+    li {
+      width: 100%;
+    }
+    @media (max-width: $phone) {
+      height: 100%;
+      display: flex;
+    }
+  }
+  ul:first-child {
+    li {
+      margin: 0 calc(var(--gap-2) - var(--gap));
+      padding: 10px 0;
+      border-radius: 15px 0 0 15px;
+      button {
+        padding: 0 0 0 var(--gap);
+        font-size: 18px;
+        font-weight: 500;
+        border: none;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        &:hover {border: none;}
+      }
+      &.active {
+        @media (min-width: $phone) {
+          background-color: var(--col-primary);
+        }
+        button {
+          color: white;
+        }
+      }
+    }
+    @media (max-width: $phone) {
+      padding: 5px var(--gap);
+      border-top: 1px solid var(--col-border);
+      li {
+        padding: 0;
+        margin: 0;
+        button {
+          color: darken(white, 25%);
+          font-size: 16px;
+          gap: 2px;
+          padding: 0;
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+          place-items: center;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  ul:nth-child(2) {
+    @media (max-width: $phone) {display:none;}
+  }
+  button {
+    color: white;
+    background-color: transparent;
+    width: 100%;height: 100%;
+    overflow: hidden;
+    min-width: 70px;
+    text-align: left;
+    white-space: nowrap;
+    @media (min-width: $phone) {
+      padding: 0 var(--gap-2);
+      border-right: 3px solid transparent;
+      height: auto;
+      &:hover {
+        border-right: 3px solid var(--col-primary);
+      }
+    }
+    &:hover {
+      color: darken(white, 25%);
+      background-color: transparent;
+    }
+  }
+  .active {
+    @media (min-width: $phone) {
+      button {
+        border-right: 3px solid var(--col-primary);
+      }
+    }
+    button {
+      color: darken(white, 25%);
+    }
+  }
+  .top {
+    width: 100%;
+    height: 75px;
+    display: grid;
+    place-items: center;
+    background-color: #23232e;
+    display: none;
+    @media (max-width: $phone) {
+      height: 100%;
+    }
+    
+    .burger {
+      display: grid;
+      gap: 6px;
+      place-items: center;
+      @media (min-width: $phone) {
+        cursor: pointer;
+      }
+
+      span {
+        background-color: var(--col-primary);
+        display: block;
+        height: 3px;
+        width: 25px;
+        transition: .25s;
+      }
+      &:hover {
+        span {
+          background-color: var(--col-primary-hover);
+        }
+      }
+    }
+  }
+  .bottom {
+    display: grid;
+    place-items: center;
+    grid-auto-rows: max-content;
+    gap: var(--gap);
+    padding-bottom: var(--gap);
+    p {
+      font-weight: 600;
+      margin: 0;
+      a {
+        transition: var(--transition);
+        &:hover {
+          color: var(--col-primary);
+        }
+      }
+    }
+    .external {
+      display: flex;
+      margin: 0;
+      a {
+        transition: var(--transition);
+        &:hover {
+          color: var(--col-primary);
+        }
+      }
+    }
+  }
+}

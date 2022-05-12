@@ -1,0 +1,215 @@
+.SctOne {
+  padding-top: var(--padding-y);
+  .bg-main {
+    position: absolute;
+    width: 100%;
+    top: 0px;left: 0px;
+    height: 666px;
+    overflow: hidden;
+    opacity: .3;
+    z-index: 0;
+    @media (max-width: $res-size-1) {
+      height: 500px;
+    }
+    span, img {
+      width: 100% !important;
+    }
+    img {
+      object-fit: cover;
+      bottom: 0px;
+      filter: blur(3px)
+    }
+    &:before {
+      content: '';
+      width: 100%;
+      height: 200px;
+      position: absolute;
+      bottom: 0px;
+      background-image: linear-gradient(to top, #1e1e28, transparent);
+      z-index: 1;
+    }
+  }
+  .header {
+    position: relative;
+    height: 450px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+    opacity: 0;
+    
+    @media (max-width: $res-size-1) {
+      height: 300px;
+    }
+    @media (max-width: $phone) {
+      height: 50vh;
+    }
+    .bg {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      span {
+        @media (min-width: $phone) {
+          width: 100% !important;
+        }
+        @media (max-width: $phone) {
+          height: 100% !important;
+        }
+        
+      }
+      img {
+        width: 100%;
+        object-fit: cover;
+        //filter: blur(2px);
+      }
+      &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #1e1e28;
+        opacity: .6;
+        z-index: 1;
+      }
+    }
+    .content {
+      z-index: 1;
+      position: absolute;
+      bottom:0px;
+      width: 100%;
+      height: 100%;
+      //max-width: 1080px;
+      display: grid;
+      place-items: center;
+      grid-template-columns: 524px 1fr;
+      left: 50%;
+      transform: translate(-50%, 0);
+      @media (max-width: $res-size-1) {
+        grid-template-columns: 325px 1fr;
+      }
+      @media (max-width: $phone) {
+        grid-template-columns: 1fr;
+      }
+    }
+    .img-hldr {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      @media (max-width: $phone) {
+        display: none;
+      }
+    }
+    .fg {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      display: grid;
+    }
+    .text {
+      display: grid;
+      grid-template-rows: max-content max-content max-content;
+      gap: var(--gap-2);
+      padding: var(--gap);
+      @media (min-width: $phone) {
+        padding: 0 var(--padding-y) 0 0;
+        margin-right: auto;
+      }
+      h1, p {
+        text-shadow: 0px 0px 2px black;
+      }
+    }
+  }
+  .header-info {
+    display: grid;
+    position: relative;
+    z-index: 0;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    overflow: hidden;
+    gap: var(--gap);
+    @media (min-width: $phone) {
+      grid-template-columns: repeat(4, 1fr);
+      place-items: center;
+    }
+    .ItemValue {
+      display: grid;
+      flex-wrap: wrap;
+      gap: 10px;
+      width: max-content;
+      grid-template-columns: repeat(2, max-content);
+      align-items: center;
+
+      opacity: 0;
+
+      @media (max-width: 500px) {
+        grid-template-columns: 1fr;
+      }
+      p:first-child {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--col-primary);
+        @media (max-width: $res-size-1) {
+          font-size: 20px;
+        }
+      }
+      p:nth-child(2) {
+        color: white;
+        @media (min-width: $res-size-1) {
+          //padding-top: 3px;
+        }
+      }
+    }
+  }
+  &.animate {
+    .header {
+      animation: headerAnimation .5s forwards;
+      .text {
+        h1, p {
+          animation: textAnimation .75s forwards;
+        }
+        p {animation-duration: 1s;}
+        button {animation: textAnimation 1.25s forwards;}
+      }
+    }
+    .header-info {
+      .ItemValue {
+        animation: textAnimation .5s forwards;
+        &:nth-child(2) {animation-duration: .75s;}
+        &:nth-child(3) {animation-duration: 1s;}
+        &:nth-child(4) {animation-duration: 1.25s;}
+      }
+    }
+  }
+  @keyframes headerAnimation {
+    0%, 25% {opacity: 0;transform: translate(0, -50%);}
+    100%    {opacity: 1;transform: translate(0, 0);}
+  }
+  @keyframes textAnimation {
+    0%, 50% {opacity:0;transform:translate(-100px, 0);}
+    100%    {opacity:1;transform:translate(0, 0);}
+  }
+  .trigger1 {
+    position: absolute;
+    top: 100vh;
+  }
+  .action1 {
+    .InfoBox {opacity: 0;}
+    &.animate {
+      .InfoBox:first-child {
+        animation: fromTop .5s forwards;
+        @media (max-width: $phone) {animation: fromLeft .5s forwards}
+      }
+      .info-items {
+        .InfoBox:nth-child(1) {
+          animation: fromLeft 1s forwards;
+        }
+        .InfoBox:nth-child(2) {
+          animation: fromCenter 1s forwards;
+          @media (max-width: $phone) {animation: fromLeft 1.25s forwards}
+        }
+        .InfoBox:nth-child(3) {
+          animation: fromRight 1s forwards;
+          @media (max-width: $phone) {animation: fromLeft 1.5s forwards}
+        }
+      }
+    }
+  }
+}

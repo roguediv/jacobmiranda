@@ -1,0 +1,22 @@
+.Experience{
+  h2 {opacity: 0;}
+  .InfoBox {opacity: 0;}
+  &.animate {
+    h2 {animation: fromTop .5s forwards;
+      @media (max-width: $phone) {animation: fromLeft .5s forwards;}}
+    .InfoBox:first-child {animation: fromTop .5s forwards;
+      @media (max-width: $phone) {animation: fromLeft .5s forwards;}}
+    .InfoBox:last-child {animation: fromBottom 2s forwards;
+      @media (max-width: $phone) {animation: fromLeft 3s forwards;}}
+    .info-items-lg {
+      .InfoBox:nth-child(1) {animation: fromLeft 1s forwards;
+        @media (max-width: $phone) {animation: fromLeft 1s forwards;}}
+      .InfoBox:nth-child(2) {animation: fromRight 1s forwards;
+        @media (max-width: $phone) {animation: fromLeft 1.5s forwards;}}
+      .InfoBox:nth-child(3) {animation: fromLeft 1.5s forwards;
+        @media (max-width: $phone) {animation: fromLeft 2s forwards;}}
+      .InfoBox:nth-child(4) {animation: fromRight 1.5s forwards;
+        @media (max-width: $phone) {animation: fromLeft 2.5s forwards;}}
+    }
+  }
+}

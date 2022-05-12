@@ -1,0 +1,54 @@
+.ProgBar {
+  width: 100%;
+  display: grid;
+  gap: 5px;
+  p {
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  .bar {
+    svg {
+      width: 100%;height: 100%;
+      display: block;
+      path:first-child {
+        stroke: #0d0d13;
+      }
+      path:nth-child(2) {
+        stroke: var(--col-primary);
+      }
+    }
+  }
+  &.circle {
+    display: grid;
+    padding-bottom: var(--gap-2);
+    position: relative;
+    p {
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    .bar {
+      position: relative;
+      p {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        place-items: center;
+      }
+    }
+    svg {
+      path:nth-child(2) {
+        stroke-dasharray: 292.209px, 292.209px;
+      }
+    }
+  }
+  &.line {
+    width: 100%;
+    svg {
+      path:nth-child(2) {
+        stroke-dasharray: 100px, 100px;
+      }
+    }
+  }
+}

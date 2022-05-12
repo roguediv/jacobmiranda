@@ -1,0 +1,54 @@
+.Projects {
+  .InfoBox-hldr {
+    .info-items-lg {
+      .InfoBox {
+        height: 70vh;
+      }
+    }
+  }
+  .trigger3 {position: absolute;top: 50vh;}
+  .trigger4 {position: absolute;top: 120vh;}
+  .trigger5 {position: absolute;top: 190vh;}
+  @media (max-width: $phone) {
+    .trigger4 {position: absolute;top: 190vh;}
+    .trigger5 {position: absolute;top: 330vh;}
+  }
+  h2 {opacity: 0;}
+  .InfoBox {opacity: 0;}
+  &.animate {
+    h2 {animation: fromLeft .5s forwards;
+      @media (max-width: $phone) {animation: fromLeft .5s forwards;}}
+    .info-items-lg {
+      .InfoBox:nth-child(1) {animation: snapLeft .5s forwards;
+        @media (max-width: $phone) {animation: snapLeft 1s forwards;}}
+      .InfoBox:nth-child(2) {animation: snapRight 1s forwards;
+        @media (max-width: $phone) {animation: snapLeft 1.5s forwards;}}
+      .InfoBox:nth-child(3) {
+        &.animate {animation: snapLeft .5s forwards;}
+      }
+      .InfoBox:nth-child(4) {
+        &.animate {
+          animation: snapRight 1s forwards;
+          @media (max-width: $phone) {animation: snapLeft 1s forwards;}
+        }
+      }
+      .InfoBox:nth-child(5) {
+        &.animate {animation: snapLeft .5s forwards;}
+      }
+      .InfoBox:nth-child(6) {
+        &.animate {
+          animation: snapRight 1s forwards;
+          @media (max-width: $phone) {animation: snapLeft 1s forwards;}
+        }
+      }
+    }
+  }
+  @keyframes snapLeft {
+    75% {opacity: 0;transform: translate(-100px, 0)}
+    100% {opacity: 1;transform: translate(0, 0)}
+  }
+  @keyframes snapRight {
+    75% {opacity: 0;transform: translate(100px, 0)}
+    100% {opacity: 1;transform: translate(0, 0)}
+  }
+}

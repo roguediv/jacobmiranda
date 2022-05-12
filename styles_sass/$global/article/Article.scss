@@ -1,0 +1,109 @@
+.Article {
+  height: calc(100vh - 100px);
+  background-color: #23232e;
+  @media (max-width: $phone) {
+    height: calc(100vh - 57px);
+  }
+
+  .content-holder, .article-content {
+    height: 100%;
+  }
+
+  .img {
+    position: relative;
+    width: 50%;
+    height: 300px;
+    @media (max-width: $phone) {
+      width: 100%;
+    }
+  }
+
+  .title {
+    gap: var(--padding-y);
+    .text {
+      display: grid;
+      gap: var(--gap);
+      padding-bottom: var(--gap);
+      border-bottom: 1px solid white;
+      .author {
+        font-style: italic;
+        color: rgba(white, .5);
+      }
+    }
+  }
+
+
+  article {
+    display: grid;
+    gap: var(--padding-y);
+    max-height: 100%;
+    padding: var(--padding-y) var(--padding-x);
+    .sct-top {
+      max-width: 1000px;
+      a {
+        font-size: 14px;
+        color: rgba(white, .5);
+        &:hover {
+          color: rgba(white, .75);
+        }
+      }
+    }
+    section, .title {
+      max-width: 1000px;
+      display: grid;
+      gap: var(--gap);
+    }
+    .resource {
+      display: inline-block;
+      width: min-content;
+      white-space: nowrap;
+      padding: 10px 20px;
+      background-color: var(--col-primary);
+      &:hover {
+        background-color: var(--col-primary-hover);
+      }
+    }
+    section {
+      h3:not(:first-child), h4:not(:first-child) {
+        padding-top: var(--gap);
+      }
+      ul {
+        &.dots {
+          list-style-type: circle;
+          margin-left: 15px;
+          ul {
+            list-style-type: square;
+            margin-left: 15px;
+          }
+        }
+      }
+      .cols {
+        display: flex;
+        row-gap: calc(var(--gap) * 2);
+        column-gap: var(--padding-y);
+        flex-wrap: wrap;
+        
+        .col-item {
+          display: grid;
+          gap: var(--gap);
+          height: min-content;
+        }
+      }
+    }
+    .figure {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: var(--padding-y);
+      row-gap: var(--gap);
+      align-items: center;
+
+      .text {
+        width: calc(50% - var(--padding-y));
+
+        @media (max-width: $phone) {width: 100%;}
+      }
+    }
+  }
+
+}

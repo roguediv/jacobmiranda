@@ -1,0 +1,404 @@
+{
+  "article": [
+    {
+      "titleID": "Demo",
+      "title": "Project: JacobMiranda.com",
+      "desc": "An overview of Jacob's work on JacobMiranda.com",
+      "author": "Jacob Miranda",
+      "dateCreated": "April 22, 2022",
+      "coverPhoto": "/images/onlyfavor/onlyfavorLogin.jpg",
+      "content": [
+        {
+          "type": "hdr",
+          "title": "Project Details",
+          "desc": "How Jacob contributed to the project",
+          "removeLink": true
+        },
+        {
+          "type": "section",
+          "content": [
+            {
+              "type": "cols",
+              "cols": [
+                {
+                  "title": "Client",
+                  "ul": {
+                    "li":["Jacob Miranda"]
+                  }
+                },
+                {
+                  "title": "Year",
+                  "ul": {
+                    "li": ["2022-2022"]
+                  }
+                },
+                {
+                  "title": "My Role",
+                  "ul": {
+                    "li": ["Website Designer", "Website Developer","Photoshop Expert"]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "hdr",
+          "title": "Project Details",
+          "desc": "JacobMiranda.com is currently in active development. This website is an online business card for Jacob Miranda to advertise his services. Jacob will also use this website to post online blogs about his professional work and display a reel of projects that he's completed. Jacob plans to have this website operational for professional use by the end of summer 2022. "
+        },
+        {
+          "type": "section",
+          "title": "Test Title",
+          "content": [
+            {
+              "type": "paragraph",
+              "p": [
+                "test paragraph",
+                "para2"
+              ]
+            },
+            {
+              "type": "link",
+              "text": "Visit leadingorbits.com",
+              "href": "https://www.leadingorbits.com"
+            },
+            {
+              "type": "image",
+              "src": "/images/bg_mtns.jpg",
+              "title": "figure1",
+              "desc": "About figure 1"
+            },
+            {
+              "type": "ul",
+              "li": [
+                "list item 1",
+                "list item 2",
+                {
+                  "type": "ul",
+                  "li": [
+                    "list item 1",
+                    "list item 2"
+                  ]
+                },
+                "list item 3",
+                "list item 4"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titleID": "onlyfavor",
+      "title": "Project: Onlyfavor.com",
+      "desc": "An overview of Jacob's work on onlyfavor.com",
+      "author": "Jacob Miranda",
+      "dateCreated": "May 11th, 2022",
+      "coverPhoto": "/images/onlyfavor/onlyfavorLogin.jpg",
+      "content": [
+        {
+          "type": "hdr",
+          "title": "Project Details",
+          "desc": "Onlyfavor is a platform where influencers can freely express themselves to their followers and make money through packages. Based on the packages their followers choose, users will have access to different levels of exclusive posts. This project required a website where; people make accounts, the database stores user information, and payments are processed securely with encryption.",
+          "removeLink": true
+        },
+        {
+          "type":"section",
+          "content": [
+            {
+              "type":"link",
+              "text":"Click here to visit Onlyfavor.",
+              "href":"https://www.onlyfavor.com"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "content": [
+            {
+              "type": "cols",
+              "cols": [
+                {
+                  "title": "Client",
+                  "ul": {
+                    "li":["Leading Orbit LLC", "Raine Benedicto"]
+                  }
+                },
+                {
+                  "title": "Year",
+                  "ul": {
+                    "li": ["2020-2022"]
+                  }
+                },
+                {
+                  "title": "My Role",
+                  "ul": {
+                    "li": ["Lead Front End Developer", "Back End Developer","Database Manager","Server Manager"]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type":"hdr",
+          "title": "Dynamic Sales Pages",
+          "desc": "Sales pages are loaded dynamically based on the requested URL. "
+        },
+        {
+          "type": "section",
+          "content": [
+            {
+              "type": "image",
+              "src": "/images/onlyfavor/onlyfavorSales.jpg",
+              "title": "Figure 1",
+              "desc": "Angel's landing page where Angeliz creates personalized post about her cross-country trips. This page is dynamically generated based on the infromation Angeliz uploads to her profile."
+            },
+            {
+              "type":"link",
+              "text":"Click here to visit Angel's landing page on Onlyfavor.",
+              "href":"https://www.onlyfavor.com/land/angel"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Text, Photos, and Videos",
+          "content": [
+            {
+              "type":"paragraph",
+              "p": [
+                "The landing page exists on the server, where the default HTML (website content management language) renders using PHP (server management langauge). The server calls a MySQL database (a server-side data query language) that creates PHP variables from a select statement using the last URL parameter as an ID column. A user profile supplies these variables, and the user may set unique content from their settings page. ", 
+                "Javascript and PHP calculate some of the content on generation. The user's age, the total price of packages, and the time left for a sale are all calculated on request. "
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Sales Form and Database Security",
+          "content": [
+            {
+              "type":"paragraph",
+              "p": [
+                "The sales form is generated based on the packages selected by the user. Variables are stored in HTML data tags and sent to the server. Variables sent through HTML are verified as needed to ensure that no one is tampering with the server. All SQL queries run through methods that safely execute statements in a prepared manner.", 
+                "JavaScript runs the math for checkout prices, then PHP double-checks with the server to ensure no tampering. The user's address, email, and other sensitive information are encrypted using a 256-bit encryption key and a salt value. Our third-party payment processor receives this information through URL variables and a verification salt. The third-party handles the credit card information of our users. The payment is processed and sent to our LLC business account two weeks later. "
+              ]
+            },
+            {
+              "type": "image",
+              "src": "/images/onlyfavor/onlyfavorSalesForm.jpg",
+              "title": "Figure 2",
+              "desc": "The sales form used when checking out a package on onlyfavor."
+            }
+          ]
+        },
+        {
+          "type": "hdr",
+          "title": "Website Navigation",
+          "desc": "How Onlyfavor works as a modern web app."
+        },
+        {
+          "type": "section",
+          "title": "Popup Generation",
+          "content": [
+            {
+              "type": "paragraph",
+              "p": [
+                "Popup forms use a default popup template stored on the server. After load-time, popups are dynamically added and removed from the \"Popups\" class upon request. Basic popups that don't require server data and are therefore stored within JavaScript. ",
+                "More complex popup forms need to be generated on the server using JavaScript Post requests. Post requests are made by javascript using request keywords. PHP returns the results of request inputs using strings separated by \"|,\" enabling string conversion into an array."
+              ]
+            },
+            {
+              "type": "image",
+              "src": "/images/onlyfavor/onlyfavorForm.jpg",
+              "title": "Figure 3",
+              "desc": "A popup form generated through the server that allows the user to send a tip to one of the Partners they would like to support."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "title": "Page Generation",
+          "content": [
+            {
+              "type": "paragraph",
+              "p": [
+                "Page generation works in a similar way to popup generation. The website dynamically loads page content based on user input after user login. This format is considered a \"Modern Web-App.\" This style of loading is popular and used by websites such as Twitter.",
+                "New pages never have to be loaded through URL requests because requested content is loaded automatically through POST requests. Loading is fast, secure, dynamic, and works well in most use cases. ",
+                "We deployed this generation method through PHP and JavaScript alone. Most other websites use a framework to handle the complexity of web apps. Because we developed this from scratch, we've gained the experience to know how frameworks complete these tasks, we have full control over handling, and the efficiency of our website is excellent."
+              ]
+            }
+          ]
+        }, 
+        {
+          "type":"hdr",
+          "title": "Conclusion",
+          "desc": "Some final thoughts about Onlyfavor."
+        },
+        {
+          "type":"section",
+          "content": [
+            {
+              "type": "paragraph",
+              "p": ["Onlyfavor is a website where Partners can express themselves and make money from their supporters. This platform uses encryption, prepared statements, and methods, to ensure database and server security. They also behave like a modern web app and therefore, webpages are responsive and fast. Sales pages load dynamically and increase conversion rates. Onlyfavor is an excellent example of my ability to create beautiful websites."]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titleID": "leadingorbits",
+      "title": "Project: Leadingorbits.com",
+      "desc": "An overview of Jacob's work on Leadingorbits.com",
+      "author": "Jacob Miranda",
+      "dateCreated": "May 12th, 2022",
+      "coverPhoto": "/images/projects.jpg",
+      "content": [
+        {
+          "type": "hdr",
+          "title": "Project Details",
+          "desc": "Leadingorbits.com is Leading Orbit LLC's business landing page. The objective of this website is to gain further clients who are interested in Leading Orbit's website design and marketing services. Leadingorbits.com has a detailed overview of how we help our clients and allows them to get in contact with Leading Orbit LLC.",
+          "removeLink": true
+        },
+        {
+          "type":"section",
+          "content": [
+            {
+              "type":"link",
+              "text":"Click here to visit Leadingorbits.",
+              "href":"https://www.leadingorbits.com"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "content": [
+            {
+              "type": "cols",
+              "cols": [
+                {
+                  "title": "Client",
+                  "ul": {
+                    "li":["Leading Orbit LLC", "Raine Benedicto"]
+                  }
+                },
+                {
+                  "title": "Year",
+                  "ul": {
+                    "li": ["2021-2021"]
+                  }
+                },
+                {
+                  "title": "My Role",
+                  "ul": {
+                    "li": ["Front End Developer", "Back End Developer", "Website Designer"]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titleID": "voiceonpage",
+      "title": "Project: VoiceOnPage.com",
+      "desc": "An overview of Jacob's work on VoiceOnPage.com",
+      "author": "Jacob Miranda",
+      "dateCreated": "May 12th, 2022",
+      "coverPhoto": "/images/voiceonpage.jpg",
+      "content": [
+        {
+          "type": "hdr",
+          "title": "Project Details",
+          "desc": "VoiceOnPage.com is for a personal trainer, Jeff Willabee, to advertise his services. Jeff is a client of Leading Orbit LLC. Leading Orbit assists Jeff with hosting his website and marketing his services. Jeff has obtained 38 new regular and consistent clients since using Leading Orbit's services to advance his business.",
+          "removeLink": true
+        },
+        {
+          "type":"section",
+          "content": [
+            {
+              "type":"link",
+              "text":"Click here to visit Voiceonpage.",
+              "href":"https://www.leadingorbits.com"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "content": [
+            {
+              "type": "cols",
+              "cols": [
+                {
+                  "title": "Client",
+                  "ul": {
+                    "li":["Leading Orbit LLC", "Jeff Willabee"]
+                  }
+                },
+                {
+                  "title": "Year",
+                  "ul": {
+                    "li": ["2021-2021"]
+                  }
+                },
+                {
+                  "title": "My Role",
+                  "ul": {
+                    "li": ["Front End Developer", "Back End Developer", "Website Designer"]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titleID": "jacobmiranda",
+      "title": "Project: JacobMiranda.com",
+      "desc": "An overview of Jacob's work on JacobMiranda.com",
+      "author": "Jacob Miranda",
+      "dateCreated": "April 22, 2022",
+      "coverPhoto": "/images/jacobmiranda.jpg",
+      "content": [
+        {
+          "type": "hdr",
+          "title": "Project Details",
+          "desc": "How Jacob contributed to the project",
+          "removeLink": true
+        },
+        {
+          "type": "section",
+          "content": [
+            {
+              "type": "cols",
+              "cols": [
+                {
+                  "title": "Client",
+                  "ul": {
+                    "li":["Jacob Miranda"]
+                  }
+                },
+                {
+                  "title": "Year",
+                  "ul": {
+                    "li": ["2022-2022"]
+                  }
+                },
+                {
+                  "title": "My Role",
+                  "ul": {
+                    "li": ["Website Designer", "Website Developer","Photoshop Expert"]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
