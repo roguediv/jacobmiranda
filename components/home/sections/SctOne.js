@@ -24,16 +24,16 @@ const SctOne = () => {
     <div className='SctOne sct'>
       <div className="trigger1"></div>
       <div className="bg-main">
-        <Image src="/images/bg_mtns.jpg" width={795} height={520} priority />
+        <Image alt="background1" src="/images/bg_mtns.jpg" width={795} height={520} priority />
       </div>
       <div className="header" >
         <div className="img bg">
-          <Image src="/images/bg_mtns.jpg" width={795} height={520} priority />
+          <Image alt="background2" src="/images/bg_mtns.jpg" width={795} height={520} priority />
         </div>
         <div className="content">
           <div className="img-hldr">
             <div className="img fg">
-              <Image src="/images/him.png" width={524} height={530} priority/>
+              <Image alt="Picture of Jacob" src="/images/him.png" width={524} height={530} priority/>
             </div>
           </div>
           <div className="text">

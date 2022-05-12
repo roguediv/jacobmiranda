@@ -35,7 +35,7 @@ const genInfoBox = (props) => {
   var img = "";
   var imgClass = "";
   if (props.image != "") {
-    img = <Image src={props.image} layout="fill" objectFit='cover' objectPosition="bottom center" />
+    img = <Image alt='InfoBox Img' src={props.image} layout="fill" objectFit='cover' objectPosition="bottom center" />
     imgClass = " hasImg"
   }
   return (

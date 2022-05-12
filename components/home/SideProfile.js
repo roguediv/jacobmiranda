@@ -24,7 +24,7 @@ const SideProfile = (props) => {
         <button className="side-close" onClick={() => {props.setSide({type: false})}}><AiFillCloseCircle /></button>
         <div className="img-hldr">
           <div className="img">
-            <Image src="/images/profile.jpg" width={90} height={90}></Image>
+            <Image alt="Profile Pic" src="/images/profile.jpg" width={90} height={90}></Image>
           </div>
           <div className="availability vis" onMouseEnter={() => {setShowAvailability(true);}} onMouseLeave={() => {setShowAvailability(false)}}></div>
           { showAvailability && <p className="availability text sm dk">Jacob is currently not available for freelance work.</p>}
@@ -75,9 +75,9 @@ const SideProfile = (props) => {
         <div>
           <p className="sm"><a href="#">Download PDF</a></p>
           <ul className="external">
-            <li><a href="https://google.com" target="_blank"><BsFacebook /></a></li>
-            <li><a href="https://google.com" target="_blank"><BsInstagram /></a></li>
-            <li><a href="https://google.com" target="_blank"><AiFillLinkedin /></a></li>
+            <li><a href="https://google.com" rel="noreferrer" target="_blank"><BsFacebook /></a></li>
+            <li><a href="https://google.com" rel="noreferrer" target="_blank"><BsInstagram /></a></li>
+            <li><a href="https://google.com" rel="noreferrer" target="_blank"><AiFillLinkedin /></a></li>
           </ul>
         </div>
       </div>

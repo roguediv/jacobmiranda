@@ -11,7 +11,7 @@ const Nav = () => {
         </div>
         <div className="text">
           <h5>Hello There!</h5>
-          <p className="sm">This portfolio is meant to behave like a modern webapp. Please test it's responsive design and use it as an example of the quality of work that Jacob would produce for you.</p>
+          <p className="sm">This portfolio is meant to behave like a modern webapp. Please test it&apos;s responsive design and use it as an example of the quality of work that Jacob would produce for you.</p>
         </div>
         {/* <div className="search">
           <input type="text" placeholder="Search for People and Posts..." />

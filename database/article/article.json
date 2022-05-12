@@ -206,8 +206,8 @@
             {
               "type": "paragraph",
               "p": [
-                "Popup forms use a default popup template stored on the server. After load-time, popups are dynamically added and removed from the \"Popups\" class upon request. Basic popups that don't require server data and are therefore stored within JavaScript. ",
-                "More complex popup forms need to be generated on the server using JavaScript Post requests. Post requests are made by javascript using request keywords. PHP returns the results of request inputs using strings separated by \"|,\" enabling string conversion into an array."
+                "Popup forms use a default popup template stored on the server. After load-time, popups are dynamically added and removed from the &quot;Popups&quot; class upon request. Basic popups that don't require server data and are therefore stored within JavaScript. ",
+                "More complex popup forms need to be generated on the server using JavaScript Post requests. Post requests are made by javascript using request keywords. PHP returns the results of request inputs using strings separated by &quot;|,&quot; enabling string conversion into an array."
               ]
             },
             {
@@ -225,7 +225,7 @@
             {
               "type": "paragraph",
               "p": [
-                "Page generation works in a similar way to popup generation. The website dynamically loads page content based on user input after user login. This format is considered a \"Modern Web-App.\" This style of loading is popular and used by websites such as Twitter.",
+                "Page generation works in a similar way to popup generation. The website dynamically loads page content based on user input after user login. This format is considered a &quot;Modern Web-App.&quot; This style of loading is popular and used by websites such as Twitter.",
                 "New pages never have to be loaded through URL requests because requested content is loaded automatically through POST requests. Loading is fast, secure, dynamic, and works well in most use cases. ",
                 "We deployed this generation method through PHP and JavaScript alone. Most other websites use a framework to handle the complexity of web apps. Because we developed this from scratch, we've gained the experience to know how frameworks complete these tasks, we have full control over handling, and the efficiency of our website is excellent."
               ]
