@@ -4,8 +4,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start -H 0.0.0.0 -p ${PORT:-8080}",
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "framer-motion": "^5.6.0",
