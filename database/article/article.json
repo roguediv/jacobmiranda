@@ -367,7 +367,7 @@
         {
           "type": "hdr",
           "title": "Project Details",
-          "desc": "How Jacob contributed to the project",
+          "desc": "A portfolio website created in Next.JS that loads articles dynamically using a JSON database.",
           "removeLink": true
         },
         {
